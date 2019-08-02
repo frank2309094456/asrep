@@ -1,15 +1,26 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 问答答 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <textarea placeholder="这是一个可以自动聚焦的textarea" auto-focus />
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <map></map>
+
+	<view>问答答</view>
+
+	<button wx:if="" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+
+	<button>即时问答</button>
+	<view>专家问答</view>
+
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 问答答 </button>
+        <block wx:else>
+        	<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        	<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+
+    <textarea placeholder="这是一个可以自动聚焦的textarea" auto-focus />
+
+
+    <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+    </view>
+    <map></map>
 </view>
